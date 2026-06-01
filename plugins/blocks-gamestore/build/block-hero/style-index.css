@@ -1,16 +1,130 @@
 /*!**************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/block-hero/style.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************/
-/**
- * The following styles get applied both on the front of your site
- * and in the editor.
- *
- * Replace them with your own styles or remove the file completely.
- */
-.wp-block-create-block-blocks-gamestore {
-  background-color: #21759b;
-  color: #fff;
-  padding: 2px;
+body #wp--skip-link--target {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+body .is-layout-constrained {
+  margin: 0;
+  padding: 0;
+}
+body .is-layout-constrained .wp-block-group {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding: 0;
+  display: block;
+}
+body .is-layout-constrained .wp-block-blocks-gamestore-block-hero {
+  width: 100vw !important;
+  height: 980px;
+  max-width: 100vw !important;
+  margin-right: calc(var(--wp--style--root--padding-right) * -1) !important;
+  margin-left: calc(var(--wp--style--root--padding-left) * -1) !important;
+  position: relative;
+}
+body .is-layout-constrained .wp-block-blocks-gamestore-block-hero .image-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 980px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 0;
+}
+body .is-layout-constrained .wp-block-blocks-gamestore-block-hero .video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 980px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 0;
+}
+body .is-layout-constrained .wp-block-blocks-gamestore-block-hero .hero-mask {
+  width: 80%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: var(--mask-gradient);
+}
+body .hero-content {
+  max-width: 1540px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  padding-left: var(--wp--style--root--padding-left);
+  padding-right: var(--wp--style--root--padding-right);
+}
+body .hero-content .hero-title {
+  font-size: clamp(2.5rem, 2.11rem + 1.97vw, 4rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 24px;
+  color: var(--white-contrast);
+}
+body .hero-content .hero-title strong {
+  background: var(--accent-gradient, linear-gradient(90deg, #3dafe2 0%, #6f76c0));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media (max-width: 768px) {
+  body .hero-content .hero-title {
+    font-size: clamp(2rem, 1.8rem + 0.98vw, 2.75rem);
+  }
+}
+body .hero-slider {
+  width: 100%;
+  position: absolute;
+  z-index: 3;
+  left: 0;
+  bottom: 0;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--mask-gradient-second, linear-gradient(270deg, rgba(250, 250, 250, 0) 0%, #fafafa));
+}
+body .hero-slider .slider-container {
+  width: 100%;
+  max-width: 1450px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+body .hero-slider .slider-container .swiper-wrapper {
+  display: flex;
+}
+body .hero-slider .slider-container .swiper-wrapper .slide-item {
+  margin-right: 100px;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  margin-left: 0;
+}
+body .hero-slider .slider-container .swiper-wrapper .slide-item img.dark-logo {
+  display: none;
+}
+.dark-mode-gamestore .hero-slider .slider-container .swiper-wrapper .slide-item img.dark-logo {
+  display: block;
+}
+.dark-mode-gamestore .hero-slider .slider-container .swiper-wrapper .slide-item img.light-logo {
+  display: none;
 }
 
 /*# sourceMappingURL=style-index.css.map*/
