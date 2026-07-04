@@ -2,7 +2,6 @@
 
 let styleMode = localStorage.getItem('styleMode')
 const styleToggle = document.querySelector('.header-mod-switcher')
-console.log('styleToggle: ', styleToggle)
 
 const enableDarkStyle = () => {
 	document.body.classList.add('dark-mode-gamestore')
